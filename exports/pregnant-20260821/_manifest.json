@@ -1,0 +1,191 @@
+{
+  "exportedResourceType": "Patient/$everything",
+  "cohort": "currently pregnant (active pregnancy Condition)",
+  "fhirStore": "https://healthcare.googleapis.com/v1/projects/mktg-vdc-poc-r83n/locations/us-west2/datasets/langcare-demo/fhirStores/demo-r4/fhir",
+  "patients": [
+    {
+      "id": "9b553331-8f4a-43c1-b83f-55c6aa859de4",
+      "name": "Thalia561 Kandy733 Schimmel440",
+      "resourceCount": 1637,
+      "resourceTypes": {
+        "Patient": 1,
+        "CarePlan": 8,
+        "CareTeam": 8,
+        "Claim": 119,
+        "Condition": 56,
+        "DiagnosticReport": 138,
+        "DocumentReference": 102,
+        "Encounter": 102,
+        "ExplanationOfBenefit": 119,
+        "ImagingStudy": 5,
+        "Immunization": 56,
+        "MedicationAdministration": 4,
+        "MedicationRequest": 17,
+        "Observation": 537,
+        "Procedure": 339,
+        "Provenance": 1,
+        "RiskAssessment": 1,
+        "SupplyDelivery": 24
+      }
+    },
+    {
+      "id": "ac2deca4-3467-4fa2-bf84-ae74289ef331",
+      "name": "Marisa391 Luanne915 Russel238",
+      "resourceCount": 1547,
+      "resourceTypes": {
+        "Patient": 1,
+        "CarePlan": 6,
+        "CareTeam": 6,
+        "Claim": 123,
+        "Condition": 52,
+        "DiagnosticReport": 135,
+        "DocumentReference": 102,
+        "Encounter": 102,
+        "ExplanationOfBenefit": 123,
+        "ImagingStudy": 5,
+        "Immunization": 55,
+        "MedicationAdministration": 5,
+        "MedicationRequest": 21,
+        "Observation": 476,
+        "Procedure": 306,
+        "Provenance": 1,
+        "RiskAssessment": 1,
+        "SupplyDelivery": 27
+      }
+    },
+    {
+      "id": "d4a31e4f-2c79-4a7f-845b-519ef3c1f511",
+      "name": "Mahalia897 Joie561 Hartmann983",
+      "resourceCount": 1103,
+      "resourceTypes": {
+        "Patient": 1,
+        "AllergyIntolerance": 10,
+        "CarePlan": 6,
+        "CareTeam": 6,
+        "Claim": 85,
+        "Condition": 33,
+        "DiagnosticReport": 80,
+        "DocumentReference": 69,
+        "Encounter": 69,
+        "ExplanationOfBenefit": 85,
+        "ImagingStudy": 7,
+        "Immunization": 54,
+        "MedicationAdministration": 6,
+        "MedicationRequest": 16,
+        "Observation": 356,
+        "Procedure": 191,
+        "Provenance": 1,
+        "RiskAssessment": 1,
+        "SupplyDelivery": 27
+      }
+    },
+    {
+      "id": "e81035c5-f3fa-42ad-88a0-b58a1ea6c994",
+      "name": "Julia241 Edith654 Trantow673",
+      "resourceCount": 1735,
+      "resourceTypes": {
+        "Patient": 1,
+        "AllergyIntolerance": 2,
+        "CarePlan": 7,
+        "CareTeam": 7,
+        "Claim": 156,
+        "Condition": 47,
+        "DiagnosticReport": 157,
+        "DocumentReference": 139,
+        "Encounter": 139,
+        "ExplanationOfBenefit": 156,
+        "ImagingStudy": 7,
+        "Immunization": 52,
+        "MedicationAdministration": 5,
+        "MedicationRequest": 17,
+        "Observation": 470,
+        "Procedure": 333,
+        "Provenance": 1,
+        "RiskAssessment": 1,
+        "SupplyDelivery": 38
+      }
+    },
+    {
+      "id": "74ee3ce8-e896-433b-bb89-43c8ad5b333a",
+      "name": "Hedwig986 Ardelia466 Will178",
+      "resourceCount": 2281,
+      "resourceTypes": {
+        "Patient": 1,
+        "CarePlan": 11,
+        "CareTeam": 10,
+        "Claim": 215,
+        "Condition": 89,
+        "DiagnosticReport": 190,
+        "DocumentReference": 147,
+        "Encounter": 148,
+        "ExplanationOfBenefit": 215,
+        "Goal": 4,
+        "ImagingStudy": 10,
+        "Immunization": 64,
+        "MedicationAdministration": 7,
+        "MedicationRequest": 69,
+        "Observation": 574,
+        "Procedure": 473,
+        "Provenance": 1,
+        "RiskAssessment": 1,
+        "SupplyDelivery": 39,
+        "ServiceRequest": 6,
+        "Task": 7
+      }
+    },
+    {
+      "id": "7a1c7fda-6b1a-44ff-b694-08ac926564c1",
+      "name": "Danuta945 Kallie862 Schmeler639",
+      "resourceCount": 1135,
+      "resourceTypes": {
+        "Patient": 1,
+        "CarePlan": 5,
+        "CareTeam": 5,
+        "Claim": 81,
+        "Condition": 42,
+        "DiagnosticReport": 92,
+        "DocumentReference": 70,
+        "Encounter": 70,
+        "ExplanationOfBenefit": 81,
+        "ImagingStudy": 4,
+        "Immunization": 57,
+        "MedicationAdministration": 3,
+        "MedicationRequest": 11,
+        "Observation": 407,
+        "Procedure": 183,
+        "Provenance": 1,
+        "RiskAssessment": 1,
+        "SupplyDelivery": 21
+      }
+    },
+    {
+      "id": "2bae212d-9da5-4b31-957f-86f058f84503",
+      "name": "Mekhi724 Kemmer911",
+      "resourceCount": 33,
+      "resourceTypes": {
+        "Patient": 1,
+        "AllergyIntolerance": 1,
+        "CarePlan": 1,
+        "Condition": 5,
+        "Encounter": 5,
+        "MedicationRequest": 4,
+        "Observation": 13,
+        "Procedure": 2,
+        "RiskAssessment": 1
+      }
+    },
+    {
+      "id": "c3bf7460-d608-4d73-b2d2-62fd4ef9b39b",
+      "name": "Anh Nguyen",
+      "resourceCount": 35,
+      "resourceTypes": {
+        "Patient": 1,
+        "Condition": 1,
+        "Coverage": 1,
+        "Encounter": 1,
+        "Observation": 30,
+        "RiskAssessment": 1
+      }
+    }
+  ]
+}

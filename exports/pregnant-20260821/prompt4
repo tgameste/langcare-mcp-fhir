@@ -1,0 +1,54 @@
+maternal_clinical_evidence_extractor = LlmAgent(
+    name="maternal_clinical_evidence_extractor",
+    model=GlobalGemini(model="gemini-3.5-flash"),
+    description=(
+        "Extracts structured maternal health clinical evidence from "
+        "unstructured clinical notes and reports. It identifies medications, "
+        "conditions, symptoms, vital signs, laboratory results, obstetric "
+        "history, gestational age, procedures, allergies, and other relevant "
+        "findings while preserving the exact source text supporting each extraction."
+    ),
+    instruction=MATERNAL_EXTRACTION_INSTRUCTION,
+    tools=[],
+    sub_agents=[],
+)
+
+
+maternal_fhir_grounding_agent = LlmAgent(
+    name="maternal_fhir_grounding_agent",
+    model=GlobalGemini(model="gemini-3.5-flash"),
+    description=(
+        "Reconciles source-grounded maternal health clinical evidence against "
+        "the patient's existing FHIR record. It searches and reads appropriate "
+        "FHIR resources, identifies matches or conflicts, preserves terminology "
+        "codes already present in returned FHIR resources, and produces "
+        "traceable FHIR grounding without modifying the patient record."
+    ),
+    instruction=MATERNAL_FHIR_GROUNDING_INSTRUCTION,
+    tools=[
+        McpToolset(
+            connection_params=StreamableHTTPConnectionParams(
+                url="https://langcare-mcp-fhir-689632009240.us-west2.run.app",
+            ),
+        )
+    ],
+    sub_agents=[],
+)
+
+
+root_agent = LlmAgent(
+    name="maternal_evidence_orchestrator",
+    model=GlobalGemini(model="gemini-3.5-flash"),
+    description=(
+        "Coordinates maternal health clinical evidence extraction and FHIR "
+        "grounding. It delegates extraction to the clinical evidence extractor "
+        "and reconciliation to the FHIR grounding agent, then combines the "
+        "results into a traceable evidence package."
+    ),
+    instruction=MATERNAL_ORCHESTRATOR_INSTRUCTION,
+    tools=[],
+    sub_agents=[
+        maternal_clinical_evidence_extractor,
+        maternal_fhir_grounding_agent,
+    ],
+)

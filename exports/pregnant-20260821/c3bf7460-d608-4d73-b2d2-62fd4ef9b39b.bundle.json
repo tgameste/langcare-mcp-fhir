@@ -1,0 +1,1701 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "total": 35,
+  "entry": [
+    {
+      "resource": {
+        "active": true,
+        "birthDate": "1988-04-12",
+        "gender": "female",
+        "id": "c3bf7460-d608-4d73-b2d2-62fd4ef9b39b",
+        "meta": {
+          "lastUpdated": "2026-08-07T13:40:34.687372+00:00",
+          "versionId": "MTc4NjExMDAzNDY4NzM3MjAwMA"
+        },
+        "name": [
+          {
+            "family": "Nguyen",
+            "given": [
+              "Anh"
+            ]
+          }
+        ],
+        "resourceType": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "display": "Problem List Item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "77386006",
+              "display": "Pregnancy",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Pregnancy"
+        },
+        "id": "401b5db8-1bb9-4d6d-81a2-c7c5d5d01a96",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:11:40.452923+00:00",
+          "versionId": "MTc4NjExMTkwMDQ1MjkyMzAwMA"
+        },
+        "onsetDateTime": "2026-07-12",
+        "recordedDate": "2026-07-12",
+        "resourceType": "Condition",
+        "subject": {
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "beneficiary": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "costToBeneficiary": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "gpvisit",
+                  "display": "GP Office Visit",
+                  "system": "http://terminology.hl7.org/CodeSystem/coverage-copay-type"
+                }
+              ],
+              "text": "Office visit copay"
+            },
+            "valueMoney": {
+              "currency": "USD",
+              "value": 25
+            }
+          }
+        ],
+        "id": "c42f4cf6-33c3-434c-ae8e-569764248924",
+        "meta": {
+          "lastUpdated": "2026-08-10T18:00:40.218448+00:00",
+          "versionId": "MTc4NjM4NDg0MDIxODQ0ODAwMA"
+        },
+        "payor": [
+          {
+            "display": "Blue Cross Blue Shield"
+          }
+        ],
+        "relationship": {
+          "coding": [
+            {
+              "code": "self",
+              "display": "Self",
+              "system": "http://terminology.hl7.org/CodeSystem/subscriber-relationship"
+            }
+          ]
+        },
+        "resourceType": "Coverage",
+        "status": "active",
+        "subscriber": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "subscriberId": "BCBS-778812345"
+      }
+    },
+    {
+      "resource": {
+        "class": {
+          "code": "AMB",
+          "display": "ambulatory",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "id": "c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "period": {
+          "end": "2026-07-12T11:15:00-07:00",
+          "start": "2026-07-12T10:30:00-07:00"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "77386006",
+                "display": "Pregnancy",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Pregnancy confirmation"
+          }
+        ],
+        "resourceType": "Encounter",
+        "status": "finished",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "424619006",
+                "display": "Prenatal visit",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Initial prenatal / pregnancy confirmation visit"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "5195-3",
+              "display": "Hepatitis B virus surface Ag",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Hepatitis B virus surface Ag"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "0ad68b8d-29cd-403c-a3fb-ef8de06e1e7f",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260385009",
+              "display": "Negative",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Negative"
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "29463-7",
+              "display": "Body weight",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Body weight"
+        },
+        "effectiveDateTime": "2026-04-15T09:00:00-07:00",
+        "id": "0caa8a37-8c46-408e-aea1-57a7b68b42af",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "kg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "kg",
+          "value": 75.5
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "39156-5",
+              "display": "Body mass index",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Body mass index"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "0e9af640-8c9d-472a-8a9b-654063e73f70",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "unit": "kg/m2",
+          "value": 29.0
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "4544-3",
+              "display": "Hematocrit [Volume Fraction] of Blood",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Hematocrit [Volume Fraction] of Blood"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "154e5df8-ee1e-485c-85c3-2a34dfd1c2f8",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "%",
+          "system": "http://unitsofmeasure.org",
+          "unit": "%",
+          "value": 32.5
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "display": "Exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "55283-6",
+              "display": "Fetal Heart rate",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Fetal Heart rate"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "194e5a46-4b4c-4806-8320-66ac95bf6ceb",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "/min",
+          "system": "http://unitsofmeasure.org",
+          "unit": "/min",
+          "value": 148
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "20507-0",
+              "display": "Reagin Ab [Presence] (RPR)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Reagin Ab [Presence] (RPR)"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "1cbce33d-4fb4-4ac5-a46f-aa17f14ea1a7",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260385009",
+              "display": "Negative",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Negative"
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "survey",
+                "display": "Survey",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "11977-6",
+              "display": "Parity (Para)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Parity (Para)"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "1f28467f-4b90-4a31-a4cd-d25ad64b9e25",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "{count}",
+          "system": "http://unitsofmeasure.org",
+          "unit": "{count}",
+          "value": 1
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "9279-1",
+              "display": "Respiratory rate",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Respiratory rate"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "23d4c7a1-386a-4a79-8033-ff383595d4e9",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "/min",
+          "system": "http://unitsofmeasure.org",
+          "unit": "/min",
+          "value": 16
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "6690-2",
+              "display": "Leukocytes [#/volume] in Blood",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Leukocytes [#/volume] in Blood"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "27d58cb3-2ddb-4e57-992f-224bad2a4d8a",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "10*3/uL",
+          "system": "http://unitsofmeasure.org",
+          "unit": "10*3/uL",
+          "value": 8.2
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "25514-1",
+              "display": "Rubella virus IgG Ab",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Rubella virus IgG Ab"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "283d5a2b-207a-4657-b106-444b51ab16cd",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "278968001",
+              "display": "Immune",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Immune"
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "29463-7",
+              "display": "Body weight",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Body weight"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "7c1ca376-e3c0-4053-813e-bb8a343c56a2",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "kg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "kg",
+          "value": 77.0
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "10331-7",
+              "display": "Rh [Type] in Blood",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Rh [Type] in Blood"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "7df3575a-02b8-4f3d-811d-2bc564dc5f43",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "165747007",
+              "display": "Rh negative",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Rh negative"
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "3016-3",
+              "display": "Thyrotropin (TSH) [Units/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Thyrotropin (TSH) [Units/volume] in Serum or Plasma"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "8d5537b8-92e4-46a8-937b-e3ebaa6a6113",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "m[IU]/L",
+          "system": "http://unitsofmeasure.org",
+          "unit": "m[IU]/L",
+          "value": 4.2
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "survey",
+                "display": "Survey",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "8665-2",
+              "display": "Last menstrual period start date",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Last menstrual period start date"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "8f1ce29a-41eb-48fb-895a-c577fc01843f",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueDateTime": "2026-05-17"
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "display": "Exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "49051-6",
+              "display": "Gestational age",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Gestational age"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "90d7615a-7ff1-4888-8fff-68043d0401e5",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "wk",
+          "system": "http://unitsofmeasure.org",
+          "unit": "wk",
+          "value": 8.0
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "8310-5",
+              "display": "Body temperature",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Body temperature"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "917a43fc-b2ff-4a69-b76e-33b826bce75f",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "Cel",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Cel",
+          "value": 36.8
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "85354-9",
+              "display": "Blood pressure panel",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Blood pressure panel"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "code": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mmHg",
+              "value": 128
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "code": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mmHg",
+              "value": 82
+            }
+          }
+        ],
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "923e46aa-6a7b-4a5f-8a0b-dcfa8fb304bc",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "777-3",
+              "display": "Platelets [#/volume] in Blood",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Platelets [#/volume] in Blood"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "9847eca6-d3ec-4f51-ae48-d9769c000e5d",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "10*3/uL",
+          "system": "http://unitsofmeasure.org",
+          "unit": "10*3/uL",
+          "value": 240
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "8302-2",
+              "display": "Body height",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Body height"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "a01413a6-31ef-40aa-98ed-e24a51a1025b",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "cm",
+          "system": "http://unitsofmeasure.org",
+          "unit": "cm",
+          "value": 163
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "social-history",
+                "display": "Social History",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "82810-3",
+              "display": "Pregnancy status",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Pregnancy status"
+        },
+        "effectiveDateTime": "2026-07-12",
+        "id": "ad5d87a3-b404-41eb-8100-740ae5d30822",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:11:41.081448+00:00",
+          "versionId": "MTc4NjExMTkwMTA4MTQ0ODAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA15173-0",
+              "display": "Pregnant",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Pregnant"
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "1558-6",
+              "display": "Fasting glucose [Mass/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Fasting glucose [Mass/volume] in Serum or Plasma"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "b547737a-2e66-4d70-afe5-8d6c47724ed3",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg/dL",
+          "value": 96
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "718-7",
+              "display": "Hemoglobin [Mass/volume] in Blood",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Hemoglobin [Mass/volume] in Blood"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "b67747af-ee16-4033-b737-ac32e49f6dc4",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "unit": "g/dL",
+          "value": 10.8
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "21198-7",
+              "display": "hCG.beta [Units/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "hCG.beta [Units/volume] in Serum or Plasma"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "c26015e9-7738-4749-82c7-719abd5eef3f",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "[IU]/L",
+          "system": "http://unitsofmeasure.org",
+          "unit": "[IU]/L",
+          "value": 62000
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "85354-9",
+              "display": "Blood pressure panel",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Blood pressure panel"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "code": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mmHg",
+              "value": 122
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "code": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mmHg",
+              "value": 78
+            }
+          }
+        ],
+        "effectiveDateTime": "2026-04-15T09:00:00-07:00",
+        "id": "c2ffbe40-b502-4fc6-b50c-75053f67031e",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "75622-1",
+              "display": "HIV 1 and 2 Ab+Ag",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "HIV 1 and 2 Ab+Ag"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "c41d7452-7a5f-4f07-a6da-2bc1f2a0e401",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260385009",
+              "display": "Negative",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Negative"
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "survey",
+                "display": "Survey",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "11996-6",
+              "display": "Number of pregnancies (Gravida)",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Number of pregnancies (Gravida)"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "d2ac268b-0804-4bca-bc49-4e599cf31639",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "{count}",
+          "system": "http://unitsofmeasure.org",
+          "unit": "{count}",
+          "value": 2
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "883-9",
+              "display": "ABO group [Type] in Blood",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "ABO group [Type] in Blood"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "dbb13970-0177-4057-91a8-96fad69bc9f9",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "58460004",
+              "display": "Blood group O",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Blood group O"
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "survey",
+                "display": "Survey",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "11778-8",
+              "display": "Delivery date Estimated",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Delivery date Estimated"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "ecca662d-da51-46e2-8270-110de545540c",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueDateTime": "2027-02-21"
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "8867-4",
+              "display": "Heart rate",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Heart rate"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "f235701f-d8e0-4485-83ac-f98608b9e16c",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueQuantity": {
+          "code": "/min",
+          "system": "http://unitsofmeasure.org",
+          "unit": "/min",
+          "value": 84
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "5804-0",
+              "display": "Protein [Mass/volume] in Urine",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Protein [Mass/volume] in Urine"
+        },
+        "effectiveDateTime": "2026-07-12T10:30:00-07:00",
+        "encounter": {
+          "reference": "Encounter/c0ce0e8d-1672-4bcf-a268-f4d2fda20fc7"
+        },
+        "id": "f9ffc8ce-7be5-4609-b2a5-54b912e8fe6c",
+        "meta": {
+          "lastUpdated": "2026-08-07T14:15:05.873211+00:00",
+          "versionId": "MTc4NjExMjEwNTg3MzIxMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "display": "Anh Nguyen",
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260385009",
+              "display": "Negative",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Negative"
+        }
+      }
+    },
+    {
+      "resource": {
+        "code": {
+          "coding": [
+            {
+              "code": "pregnancy-risk",
+              "display": "Pregnancy risk assessment",
+              "system": "https://langcare.health/fhir/assessment-method"
+            }
+          ],
+          "text": "Pregnancy risk assessment"
+        },
+        "id": "a655df80-7273-48a1-ad06-80cb41de66b1",
+        "identifier": [
+          {
+            "system": "https://langcare.health/fhir/risk-assessment",
+            "value": "pregnancy-risk:c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2026-08-21T15:38:26.472857+00:00",
+          "versionId": "MTc4NzMyNjcwNjQ3Mjg1NzAwMA"
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "pregnancy_risk_assessment",
+              "display": "LangCare pregnancy_risk_assessment",
+              "system": "https://langcare.health/fhir/assessment-method"
+            }
+          ],
+          "text": "LangCare pregnancy_risk_assessment"
+        },
+        "note": [
+          {
+            "text": "Pregnancy risk Moderate (score 7) at 13.8 weeks (First trimester); initial classification. Generated by LangCare pregnancy_risk_assessment. Contributing factors: Advanced maternal age (moderate +2); Borderline blood pressure (moderate +1); BMI (moderate +1); Anemia (hemoglobin) (low +1); Thyroid (TSH) (low +1); Rh-negative blood type (moderate +1)."
+          }
+        ],
+        "occurrenceDateTime": "2026-08-21T15:38:26Z",
+        "prediction": [
+          {
+            "outcome": {
+              "text": "Adverse pregnancy outcome"
+            },
+            "qualitativeRisk": {
+              "coding": [
+                {
+                  "code": "moderate",
+                  "display": "Moderate",
+                  "system": "http://terminology.hl7.org/CodeSystem/risk-probability"
+                }
+              ],
+              "text": "Moderate"
+            }
+          }
+        ],
+        "resourceType": "RiskAssessment",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/c3bf7460-d608-4d73-b2d2-62fd4ef9b39b"
+        }
+      }
+    }
+  ]
+}

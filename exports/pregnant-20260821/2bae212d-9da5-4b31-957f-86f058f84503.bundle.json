@@ -1,0 +1,1592 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "total": 33,
+  "entry": [
+    {
+      "resource": {
+        "active": true,
+        "birthDate": "1983-11-04",
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2106-3",
+                  "display": "White",
+                  "system": "urn:oid:2.16.840.1.113883.6.238"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "White"
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+          },
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2186-5",
+                  "display": "Not Hispanic or Latino",
+                  "system": "urn:oid:2.16.840.1.113883.6.238"
+                }
+              },
+              {
+                "url": "text",
+                "valueString": "Not Hispanic or Latino"
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+          }
+        ],
+        "gender": "female",
+        "id": "2bae212d-9da5-4b31-957f-86f058f84503",
+        "maritalStatus": {
+          "coding": [
+            {
+              "code": "M",
+              "display": "Married",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
+            }
+          ],
+          "text": "Married"
+        },
+        "meta": {
+          "lastUpdated": "2026-08-21T13:37:55.916113+00:00",
+          "versionId": "MTc4NzMxOTQ3NTkxNjExMzAwMA"
+        },
+        "name": [
+          {
+            "family": "Kemmer911",
+            "given": [
+              "Mekhi724"
+            ],
+            "use": "official"
+          }
+        ],
+        "resourceType": "Patient"
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          "food"
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "227037002",
+              "display": "Fish - dietary (substance)",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Food Allergy: Fish"
+        },
+        "criticality": "low",
+        "id": "0635cf57-fcae-4da7-a955-7e6ce5066052",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:39:05.536518+00:00",
+          "versionId": "MTc4NzMxOTU0NTUzNjUxODAwMA"
+        },
+        "onsetDateTime": "1985-08-07",
+        "patient": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "recordedDate": "1985-08-07",
+        "resourceType": "AllergyIntolerance",
+        "type": "allergy",
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "activity": [
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "code": "304510005",
+                    "display": "Recommendation to avoid exercise",
+                    "system": "http://snomed.info/sct"
+                  }
+                ],
+                "text": "Recommendation to avoid exercise"
+              },
+              "status": "stopped"
+            }
+          },
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "code": "371605008",
+                    "display": "Deep breathing and coughing exercises",
+                    "system": "http://snomed.info/sct"
+                  }
+                ],
+                "text": "Deep breathing and coughing exercises"
+              },
+              "status": "stopped"
+            }
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "Condition/a3f6b5fc-3637-4680-9084-5450bd9e7a46"
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "53950000",
+                "display": "Respiratory therapy",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Respiratory therapy"
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/76db6337-1044-40c5-91c3-d7cec8be7166"
+        },
+        "id": "486e45cf-2057-4c78-b718-6a0ba998f7ea",
+        "intent": "plan",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:39:30.758265+00:00",
+          "versionId": "MTc4NzMxOTU3MDc1ODI2NTAwMA"
+        },
+        "period": {
+          "start": "2013-08-22"
+        },
+        "resourceType": "CarePlan",
+        "status": "revoked",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        }
+      }
+    },
+    {
+      "resource": {
+        "abatementDateTime": "2015-11-07",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "resolved",
+              "display": "Resolved",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "19169002",
+              "display": "Miscarriage in first trimester",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Miscarriage in first trimester"
+        },
+        "encounter": {
+          "reference": "Encounter/612be71e-7c9c-43b7-be5b-eedf04b10fe1"
+        },
+        "id": "1f98d1c1-0118-47aa-8bfb-008d1d688a6f",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:38:47.892721+00:00",
+          "versionId": "MTc4NzMxOTUyNzg5MjcyMTAwMA"
+        },
+        "onsetDateTime": "2015-10-30",
+        "resourceType": "Condition",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "abatementDateTime": "2015-11-07",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "resolved",
+              "display": "Resolved",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "72892002",
+              "display": "Normal pregnancy",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Normal pregnancy"
+        },
+        "encounter": {
+          "reference": "Encounter/6a014582-5c28-4e05-ac20-a838f3929f30"
+        },
+        "id": "713b470f-2cd3-457e-8ebf-318da66d66f2",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:38:43.656626+00:00",
+          "versionId": "MTc4NzMxOTUyMzY1NjYyNjAwMA"
+        },
+        "onsetDateTime": "2015-10-30",
+        "resourceType": "Condition",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "display": "Active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "72892002",
+              "display": "Normal pregnancy",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Normal pregnancy"
+        },
+        "encounter": {
+          "reference": "Encounter/492cf9e9-6d99-4cc7-b901-75f1e7bc330c"
+        },
+        "id": "9dacfb25-78f1-4ffc-a084-ce02d2092b24",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:51:32.386042+00:00",
+          "versionId": "MTc4NzMyMDI5MjM4NjA0MjAwMA"
+        },
+        "onsetDateTime": "2026-05-15",
+        "recordedDate": "2026-08-14",
+        "resourceType": "Condition",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "abatementDateTime": "2013-09-08",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "resolved",
+              "display": "Resolved",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "10509002",
+              "display": "Acute bronchitis (disorder)",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Acute bronchitis (disorder)"
+        },
+        "encounter": {
+          "reference": "Encounter/76db6337-1044-40c5-91c3-d7cec8be7166"
+        },
+        "id": "a3f6b5fc-3637-4680-9084-5450bd9e7a46",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:38:39.654259+00:00",
+          "versionId": "MTc4NzMxOTUxOTY1NDI1OTAwMA"
+        },
+        "onsetDateTime": "2013-08-22",
+        "resourceType": "Condition",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "abatementDateTime": "2015-11-07",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "resolved",
+              "display": "Resolved",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "199223000",
+              "display": "Fetus with chromosomal abnormality",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Fetus with chromosomal abnormality"
+        },
+        "encounter": {
+          "reference": "Encounter/612be71e-7c9c-43b7-be5b-eedf04b10fe1"
+        },
+        "id": "f1ad77ad-4161-4355-bda5-39b55732475e",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:38:51.745460+00:00",
+          "versionId": "MTc4NzMxOTUzMTc0NTQ2MDAwMA"
+        },
+        "onsetDateTime": "2015-10-30",
+        "resourceType": "Condition",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "display": "Confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "class": {
+          "code": "AMB",
+          "display": "ambulatory",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "id": "492cf9e9-6d99-4cc7-b901-75f1e7bc330c",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:51:24.868061+00:00",
+          "versionId": "MTc4NzMyMDI4NDg2ODA2MTAwMA"
+        },
+        "period": {
+          "end": "2026-08-14",
+          "start": "2026-08-14"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "72892002",
+                "display": "Normal pregnancy",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Normal pregnancy"
+          }
+        ],
+        "resourceType": "Encounter",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "424619006",
+                "display": "Prenatal visit",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Prenatal visit"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "class": {
+          "code": "AMB",
+          "display": "ambulatory",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "id": "612be71e-7c9c-43b7-be5b-eedf04b10fe1",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:38:22.790965+00:00",
+          "versionId": "MTc4NzMxOTUwMjc5MDk2NTAwMA"
+        },
+        "period": {
+          "end": "2015-11-07",
+          "start": "2015-11-07"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "199223000",
+                "display": "Fetus with chromosomal abnormality",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Fetus with chromosomal abnormality"
+          }
+        ],
+        "resourceType": "Encounter",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        }
+      }
+    },
+    {
+      "resource": {
+        "class": {
+          "code": "AMB",
+          "display": "ambulatory",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "id": "6a014582-5c28-4e05-ac20-a838f3929f30",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:38:20.328100+00:00",
+          "versionId": "MTc4NzMxOTUwMDMyODEwMDAwMA"
+        },
+        "period": {
+          "end": "2015-10-30",
+          "start": "2015-10-30"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "72892002",
+                "display": "Normal pregnancy",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Normal pregnancy"
+          }
+        ],
+        "resourceType": "Encounter",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        }
+      }
+    },
+    {
+      "resource": {
+        "class": {
+          "code": "AMB",
+          "display": "ambulatory",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "id": "76db6337-1044-40c5-91c3-d7cec8be7166",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:38:10.206328+00:00",
+          "versionId": "MTc4NzMxOTQ5MDIwNjMyODAwMA"
+        },
+        "period": {
+          "end": "2013-08-22",
+          "start": "2013-08-22"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "10509002",
+                "display": "Acute bronchitis (disorder)",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Acute bronchitis (disorder)"
+          }
+        ],
+        "resourceType": "Encounter",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        }
+      }
+    },
+    {
+      "resource": {
+        "class": {
+          "code": "AMB",
+          "display": "ambulatory",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        },
+        "id": "af480c4b-5f31-4e34-aaf6-5180cd6c78f2",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:38:17.610792+00:00",
+          "versionId": "MTc4NzMxOTQ5NzYxMDc5MjAwMA"
+        },
+        "period": {
+          "end": "2014-01-14",
+          "start": "2014-01-14"
+        },
+        "resourceType": "Encounter",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "162673000",
+                "display": "General examination of patient (procedure)",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Outpatient Encounter"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "authoredOn": "1984-01-14",
+        "id": "0076bfe5-69e4-44df-9fb3-95a927c93a57",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "834061",
+              "display": "Penicillin V Potassium 250 MG Oral Tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ],
+          "text": "Penicillin V Potassium 250 MG"
+        },
+        "meta": {
+          "lastUpdated": "2026-08-21T13:39:09.022285+00:00",
+          "versionId": "MTc4NzMxOTU0OTAyMjI4NTAwMA"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "43878008",
+                "display": "Streptococcal sore throat (disorder)",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Streptococcal sore throat (disorder)"
+          }
+        ],
+        "resourceType": "MedicationRequest",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        }
+      }
+    },
+    {
+      "resource": {
+        "authoredOn": "2013-08-22",
+        "encounter": {
+          "reference": "Encounter/76db6337-1044-40c5-91c3-d7cec8be7166"
+        },
+        "id": "3174c729-83f3-48d5-a1e0-7c15c31d077b",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "307696",
+              "display": "Acetaminophen 160 MG",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ],
+          "text": "Acetaminophen 160 MG"
+        },
+        "meta": {
+          "lastUpdated": "2026-08-21T13:39:18.270481+00:00",
+          "versionId": "MTc4NzMxOTU1ODI3MDQ4MTAwMA"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "10509002",
+                "display": "Acute bronchitis (disorder)",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Acute bronchitis (disorder)"
+          }
+        ],
+        "resourceType": "MedicationRequest",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        }
+      }
+    },
+    {
+      "resource": {
+        "authoredOn": "1996-05-12",
+        "id": "bbfd4da9-3770-409b-8cfb-9b863213ae5b",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "307696",
+              "display": "Acetaminophen 160 MG",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ],
+          "text": "Acetaminophen 160 MG"
+        },
+        "meta": {
+          "lastUpdated": "2026-08-21T13:39:14.809564+00:00",
+          "versionId": "MTc4NzMxOTU1NDgwOTU2NDAwMA"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "10509002",
+                "display": "Acute bronchitis (disorder)",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Acute bronchitis (disorder)"
+          }
+        ],
+        "resourceType": "MedicationRequest",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        }
+      }
+    },
+    {
+      "resource": {
+        "authoredOn": "1995-04-13",
+        "id": "e3335122-b264-46ee-acea-a9e9e46fc128",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "307696",
+              "display": "Acetaminophen 160 MG",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ],
+          "text": "Acetaminophen 160 MG"
+        },
+        "meta": {
+          "lastUpdated": "2026-08-21T13:39:11.840457+00:00",
+          "versionId": "MTc4NzMxOTU1MTg0MDQ1NzAwMA"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "10509002",
+                "display": "Acute bronchitis (disorder)",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Acute bronchitis (disorder)"
+          }
+        ],
+        "resourceType": "MedicationRequest",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "display": "Exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "11884-4",
+              "display": "Gestational age Estimated",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Gestational Age"
+        },
+        "effectiveDateTime": "2026-08-14",
+        "encounter": {
+          "reference": "Encounter/492cf9e9-6d99-4cc7-b901-75f1e7bc330c"
+        },
+        "id": "15a77977-ae3e-4717-934b-7dfd444aaba4",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:52:05.054523+00:00",
+          "versionId": "MTc4NzMyMDMyNTA1NDUyMzAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "valueQuantity": {
+          "code": "wk",
+          "system": "http://unitsofmeasure.org",
+          "unit": "wk",
+          "value": 13
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "718-7",
+              "display": "Hemoglobin [Mass/volume] in Blood",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Hemoglobin"
+        },
+        "effectiveDateTime": "2026-08-14",
+        "encounter": {
+          "reference": "Encounter/492cf9e9-6d99-4cc7-b901-75f1e7bc330c"
+        },
+        "id": "17487ee8-2c42-47de-8807-e64a972d3bca",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:51:51.764901+00:00",
+          "versionId": "MTc4NzMyMDMxMTc2NDkwMTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "valueQuantity": {
+          "code": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "unit": "g/dL",
+          "value": 10.8
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "39156-5",
+              "display": "Body Mass Index",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Body Mass Index"
+        },
+        "effectiveDateTime": "2026-08-14",
+        "encounter": {
+          "reference": "Encounter/492cf9e9-6d99-4cc7-b901-75f1e7bc330c"
+        },
+        "id": "3a718237-5f7d-43c2-9a20-14245acaab09",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:51:40.800023+00:00",
+          "versionId": "MTc4NzMyMDMwMDgwMDAyMzAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "valueQuantity": {
+          "code": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "unit": "kg/m2",
+          "value": 28.9
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "10331-7",
+              "display": "Rh [Type] in Blood",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Rh Type"
+        },
+        "effectiveDateTime": "2026-08-14",
+        "encounter": {
+          "reference": "Encounter/492cf9e9-6d99-4cc7-b901-75f1e7bc330c"
+        },
+        "id": "96ca6a17-ef6d-4b68-86a2-d55f144abae7",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:52:02.541179+00:00",
+          "versionId": "MTc4NzMyMDMyMjU0MTE3OTAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "valueCodeableConcept": {
+          "text": "Rh Negative"
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "1558-6",
+              "display": "Fasting glucose [Mass/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Fasting Glucose"
+        },
+        "effectiveDateTime": "2026-08-14",
+        "encounter": {
+          "reference": "Encounter/492cf9e9-6d99-4cc7-b901-75f1e7bc330c"
+        },
+        "id": "9a05c40d-667d-4294-9052-12ed69d1f9ae",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:51:59.103384+00:00",
+          "versionId": "MTc4NzMyMDMxOTEwMzM4NDAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "valueQuantity": {
+          "code": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg/dL",
+          "value": 96
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "text": "Systolic Blood Pressure"
+            },
+            "valueQuantity": {
+              "code": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mm[Hg]",
+              "value": 138
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "text": "Diastolic Blood Pressure"
+            },
+            "valueQuantity": {
+              "code": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mm[Hg]",
+              "value": 88
+            }
+          }
+        ],
+        "effectiveDateTime": "2026-08-14",
+        "encounter": {
+          "reference": "Encounter/492cf9e9-6d99-4cc7-b901-75f1e7bc330c"
+        },
+        "id": "9f2ac919-81e1-48c4-872f-3a7a42ab33c0",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:51:37.287700+00:00",
+          "versionId": "MTc4NzMyMDI5NzI4NzcwMDAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "85354-9",
+              "display": "Blood pressure panel with all children optional",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "text": "Systolic Blood Pressure"
+            },
+            "valueQuantity": {
+              "code": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mm[Hg]",
+              "value": 133
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure",
+                  "system": "http://loinc.org"
+                }
+              ],
+              "text": "Diastolic Blood Pressure"
+            },
+            "valueQuantity": {
+              "code": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "unit": "mm[Hg]",
+              "value": 76
+            }
+          }
+        ],
+        "effectiveDateTime": "2014-01-14",
+        "encounter": {
+          "reference": "Encounter/af480c4b-5f31-4e34-aaf6-5180cd6c78f2"
+        },
+        "id": "b9f984eb-98bd-4652-bff3-88414761cde6",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:40:06.896382+00:00",
+          "versionId": "MTc4NzMxOTYwNjg5NjM4MjAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "3016-3",
+              "display": "Thyrotropin [Units/volume] in Serum or Plasma",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "TSH"
+        },
+        "effectiveDateTime": "2026-08-14",
+        "encounter": {
+          "reference": "Encounter/492cf9e9-6d99-4cc7-b901-75f1e7bc330c"
+        },
+        "id": "beea2b40-f2f6-43f1-baac-97b3eaf8df96",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:51:56.725366+00:00",
+          "versionId": "MTc4NzMyMDMxNjcyNTM2NjAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "valueQuantity": {
+          "code": "m[IU]/L",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mIU/L",
+          "value": 3.2
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "39156-5",
+              "display": "Body Mass Index",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Body Mass Index"
+        },
+        "effectiveDateTime": "2014-01-14",
+        "encounter": {
+          "reference": "Encounter/af480c4b-5f31-4e34-aaf6-5180cd6c78f2"
+        },
+        "id": "c6e38795-6e9e-4060-8a6b-d6d570db1e10",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:40:02.319847+00:00",
+          "versionId": "MTc4NzMxOTYwMjMxOTg0NzAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "valueQuantity": {
+          "code": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "unit": "kg/m2",
+          "value": 27.6
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "8302-2",
+              "display": "Body Height",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Body Height"
+        },
+        "effectiveDateTime": "2014-01-14",
+        "encounter": {
+          "reference": "Encounter/af480c4b-5f31-4e34-aaf6-5180cd6c78f2"
+        },
+        "id": "d55eb38c-a890-47e8-b354-d142b63c7577",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:39:58.725003+00:00",
+          "versionId": "MTc4NzMxOTU5ODcyNTAwMzAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "valueQuantity": {
+          "code": "cm",
+          "system": "http://unitsofmeasure.org",
+          "unit": "cm",
+          "value": 163.7
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "29463-7",
+              "display": "Body Weight",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Body Weight"
+        },
+        "effectiveDateTime": "2014-01-14",
+        "encounter": {
+          "reference": "Encounter/af480c4b-5f31-4e34-aaf6-5180cd6c78f2"
+        },
+        "id": "e71c9064-9e34-4c92-9244-e3ed8d4ef7cd",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:39:55.734070+00:00",
+          "versionId": "MTc4NzMxOTU5NTczNDA3MDAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "valueQuantity": {
+          "code": "kg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "kg",
+          "value": 73.9
+        }
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "exam",
+                "display": "Exam",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "11778-8",
+              "display": "Delivery date Estimated",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Estimated Date of Delivery"
+        },
+        "effectiveDateTime": "2026-08-14",
+        "encounter": {
+          "reference": "Encounter/492cf9e9-6d99-4cc7-b901-75f1e7bc330c"
+        },
+        "id": "e7f1dd42-4e26-491e-9bc9-df7552363ce6",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:52:07.969276+00:00",
+          "versionId": "MTc4NzMyMDMyNzk2OTI3NjAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "valueDateTime": "2027-02-19"
+      }
+    },
+    {
+      "resource": {
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "vital-signs",
+                "display": "Vital Signs",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "29463-7",
+              "display": "Body Weight",
+              "system": "http://loinc.org"
+            }
+          ],
+          "text": "Body Weight"
+        },
+        "effectiveDateTime": "2026-08-14",
+        "encounter": {
+          "reference": "Encounter/492cf9e9-6d99-4cc7-b901-75f1e7bc330c"
+        },
+        "id": "ec303e41-670f-4a77-81ba-b20c850f8b55",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:51:43.910180+00:00",
+          "versionId": "MTc4NzMyMDMwMzkxMDE4MDAwMA"
+        },
+        "resourceType": "Observation",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        },
+        "valueQuantity": {
+          "code": "kg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "kg",
+          "value": 77.5
+        }
+      }
+    },
+    {
+      "resource": {
+        "code": {
+          "coding": [
+            {
+              "code": "428191000124101",
+              "display": "Documentation of current medications",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Documentation of current medications"
+        },
+        "encounter": {
+          "reference": "Encounter/af480c4b-5f31-4e34-aaf6-5180cd6c78f2"
+        },
+        "id": "552f5785-6d1b-4c29-bd5a-f8bb99622f4e",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:39:36.910337+00:00",
+          "versionId": "MTc4NzMxOTU3NjkxMDMzNzAwMA"
+        },
+        "performedDateTime": "2014-01-14",
+        "resourceType": "Procedure",
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        }
+      }
+    },
+    {
+      "resource": {
+        "code": {
+          "coding": [
+            {
+              "code": "171207006",
+              "display": "Standard pregnancy test",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Standard pregnancy test"
+        },
+        "encounter": {
+          "reference": "Encounter/6a014582-5c28-4e05-ac20-a838f3929f30"
+        },
+        "id": "f4414336-2379-4b2f-b716-856507f4dbdd",
+        "meta": {
+          "lastUpdated": "2026-08-21T13:39:34.210850+00:00",
+          "versionId": "MTc4NzMxOTU3NDIxMDg1MDAwMA"
+        },
+        "performedDateTime": "2015-10-30",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "72892002",
+                "display": "Normal pregnancy",
+                "system": "http://snomed.info/sct"
+              }
+            ],
+            "text": "Normal pregnancy"
+          }
+        ],
+        "resourceType": "Procedure",
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        }
+      }
+    },
+    {
+      "resource": {
+        "code": {
+          "coding": [
+            {
+              "code": "pregnancy-risk",
+              "display": "Pregnancy risk assessment",
+              "system": "https://langcare.health/fhir/assessment-method"
+            }
+          ],
+          "text": "Pregnancy risk assessment"
+        },
+        "id": "975a1f0e-3ae5-4a0f-af17-daecdb29dd7e",
+        "identifier": [
+          {
+            "system": "https://langcare.health/fhir/risk-assessment",
+            "value": "pregnancy-risk:2bae212d-9da5-4b31-957f-86f058f84503"
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2026-08-21T15:38:26.528918+00:00",
+          "versionId": "MTc4NzMyNjcwNjUyODkxODAwMA"
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "pregnancy_risk_assessment",
+              "display": "LangCare pregnancy_risk_assessment",
+              "system": "https://langcare.health/fhir/assessment-method"
+            }
+          ],
+          "text": "LangCare pregnancy_risk_assessment"
+        },
+        "note": [
+          {
+            "text": "Pregnancy risk High (score 8) at 14.1 weeks (Second trimester); initial classification. Generated by LangCare pregnancy_risk_assessment. Contributing factors: Advanced maternal age (high +3); Borderline blood pressure (moderate +1); BMI (moderate +1); Anemia (hemoglobin) (low +1); Thyroid (TSH) (low +1); Rh-negative blood type (moderate +1)."
+          }
+        ],
+        "occurrenceDateTime": "2026-08-21T15:38:26Z",
+        "prediction": [
+          {
+            "outcome": {
+              "text": "Adverse pregnancy outcome"
+            },
+            "qualitativeRisk": {
+              "coding": [
+                {
+                  "code": "high",
+                  "display": "High",
+                  "system": "http://terminology.hl7.org/CodeSystem/risk-probability"
+                }
+              ],
+              "text": "High"
+            }
+          }
+        ],
+        "resourceType": "RiskAssessment",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/2bae212d-9da5-4b31-957f-86f058f84503"
+        }
+      }
+    }
+  ]
+}
