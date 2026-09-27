@@ -1,0 +1,14 @@
+{
+  "_comment": "Synthetic example data only - not from any real person.",
+  "requisitions": {"2025-01-15": "00000000-0000-4000-8000-000000000001"},
+  "biomarkers": [
+    {"id": "00000000-0000-4000-8000-0000000000a1", "name": "Glucose", "categories": ["Metabolic"],
+     "date": "2025-07-15", "value": "88", "unit": "mg/dL", "low": 65, "high": 99, "range": "65-99",
+     "status": "in_range", "past": [{"date": "2025-01-15", "value": "101", "in_range": false}]},
+    {"id": "00000000-0000-4000-8000-0000000000a2", "name": "Ferritin", "categories": ["Nutrients"],
+     "date": "2025-07-15", "value": "18", "unit": "ng/mL", "low": 24, "high": 380, "range": "24 - 380",
+     "status": "below", "past": []},
+    {"id": "00000000-0000-4000-8000-0000000000a3", "name": "Protein - Urine", "categories": ["Urine"],
+     "date": "2025-07-15", "value": "NEGATIVE", "range": "NEGATIVE", "status": "in_range", "past": []}
+  ]
+}
